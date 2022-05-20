@@ -3,14 +3,13 @@
 // but it will always be sorted.
 
 const countUniqueValues = (arr) => {
-	let uniqueValuesCounter = 0;
+	let uniqueValuesCounter = 1;
 
 	if (arr.length === 0) {
-		return uniqueValuesCounter;
+		return 0;
 	} else if (arr.length === 1) {
-		return uniqueValuesCounter + 1;
+		return 1;
 	} else {
-		uniqueValuesCounter = 1;
 		let left = 0;
 
 		while (left <= arr.length - 2) {
